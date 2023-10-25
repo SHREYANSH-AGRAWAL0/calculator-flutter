@@ -23,7 +23,14 @@ class Calculator extends StatelessWidget {
         appBar: AppBar(
           title: Center(child: Text("Calculator")),
         ),
-        body: Column(children: [Text("body space")]),
+        body: Column(children: [
+          Container(
+              // for text area
+              ),
+          Container(
+              // for the numpad area
+              )
+        ]),
       ),
     );
   }
