@@ -18,9 +18,21 @@ class calculator extends StatelessWidget {
 
   @OverRide
   Widget build(BuildContext context) {
-    return const Material(
-        child: Column(
-      children: [Text('Calculation'), Text('Answer')],
-    ));
+
+    return Material(
+      child: Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text("Calculator")),
+        ),
+        body: Column(children: [
+          Container(
+            Text('Calculation'), Text('Answer')    
+          ),
+          Container(
+              // for the numpad area
+              )
+        ]),
+      ),
+    );
   }
 }
