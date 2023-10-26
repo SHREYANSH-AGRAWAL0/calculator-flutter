@@ -1,3 +1,5 @@
+// ignore_for_file: camel_case_types
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -7,23 +9,25 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: calculator());
+    return const MaterialApp(home: Calculator());
   }
 }
 
-class calculator extends StatelessWidget {
-  const calculator({super.key});
+class Calculator extends StatelessWidget {
+  const Calculator({super.key});
 
+  @override
   Widget build(BuildContext context) {
     return Material(
       child: Scaffold(
         appBar: AppBar(
-          title: Center(child: Text("Calculator")),
+          title: const Center(child: Text("Calculator")),
         ),
         body: Column(children: [
-          Text('Calculation'),
-          Text('Answer'),
+          const Text('Calculation'),
+          const Text('Answer'),
           Container(
               // for the numpad area
               )
