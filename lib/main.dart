@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  @override
+
+  @OverRide
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Calculator(),
-    );
+    return MaterialApp(home: calculator());
   }
 }
 
-class Calculator extends StatelessWidget {
-  const Calculator({super.key});
-  @override
+class calculator extends StatelessWidget {
+  const calculator({super.key});
+
+  @OverRide
   Widget build(BuildContext context) {
+
     return Material(
       child: Scaffold(
         appBar: AppBar(
@@ -25,8 +26,8 @@ class Calculator extends StatelessWidget {
         ),
         body: Column(children: [
           Container(
-              // for text area
-              ),
+            Text('Calculation'), Text('Answer')    
+          ),
           Container(
               // for the numpad area
               )
