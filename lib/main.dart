@@ -28,9 +28,55 @@ class Calculator extends StatelessWidget {
         body: Column(children: [
           const Text('Calculation'),
           const Text('Answer'),
-          Container(
+          Center(
+            child: Container(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A"))
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A"))
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A"))
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A"))
+                    ],
+                  ),
+                  Row(
+                    children: [
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A")),
+                      ElevatedButton(onPressed: () {}, child: Text("A"))
+                    ],
+                  ),
+                ],
+              ),
               // for the numpad area
-              )
+            ),
+          )
         ]),
       ),
     );
